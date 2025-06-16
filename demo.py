@@ -18,6 +18,8 @@ DEFAULT_DEVICE = ('cuda' if torch.cuda.is_available() else
                   'mps' if torch.backends.mps.is_available() else
                   'cpu')
 
+
+print("DEFAULT_DEVICE: ", DEFAULT_DEVICE)
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
