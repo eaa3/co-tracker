@@ -1,7 +1,7 @@
-pip install torch torchvision
-pip install opencv-python
-pip install flow_vis
-pip install matplotlib
-pip install moviepy==1.0.3
-pip install einops
-pip install timm
+torch torchvision
+opencv-python
+flow_vis
+matplotlib
+moviepy==1.0.3
+einops
+timm
