@@ -25,11 +25,11 @@ if __name__ == "__main__":
         default=0,
         help="device to capture video from",
     )
-    # parser.add_argument(
-    #     "--checkpoint",
-    #     default="./checkpoints/cotracker_stride_4_wind_8.pth",
-    #     help="cotracker model",
-    # )
+    parser.add_argument(
+        "--checkpoint",
+        default="./checkpoints/cotracker_stride_4_wind_8.pth",
+        help="cotracker model",
+    )
     parser.add_argument(
         "--grid_size",
         type=int,
@@ -88,7 +88,7 @@ if __name__ == "__main__":
 
             for res_frame in res_video:
                 cv2.imshow('Capture', res_frame)
-                cv2.waitKey(40) # artificially fake a 25 fps frame rate
+                cv2.waitKey(1) # artificially fake a 25 fps frame rate
 
         if cv2.waitKey(1) == ord('q'):
             break
